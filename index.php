@@ -51,7 +51,7 @@
         <h1>Moyenne de la classe</h1>
         <ul>
             <?php foreach ($noteEleve as $key => $value){
-                echo "<li>$key : ".round(calculMoyenne($value),2)."</li>";
+                echo "<li>$key : ".calculMoyenne($value)."</li>";
             }
             echo "<br><li>Moyenne générale :".moyenneGenerale($noteEleve)."</li>"; ?>
         </ul>
